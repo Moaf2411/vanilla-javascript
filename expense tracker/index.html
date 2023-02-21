@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Expense Tracker</h3>
+        <!-- BALANCE -->
+        <div class="balance">
+            <p>YOUR BALANCE</p>
+            <h2 class="total-money"></h2>
+            <div class="total-container">
+                <div class="income">
+                    <p>INCOME</p>
+                    <p id="income"></p>
+                </div>
+                <div class="expense">
+                    <p>EXPENSE</p>
+                    <p id="expense"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HISTORY -->
+        <div class="history">
+            <h3>History</h3>
+        </div>
+
+        <!-- Adder -->
+        <div class="adder">
+            <h3>Add new transaction</h3>
+            <form class="adder-form">
+                <label for="name">Text</label>
+                <input type="text" name="name" placeholder="Enter text...">
+                <label for="amount">Amount</label>
+                <small>(negative: expense, positive: income</small>
+                <input type="text" name="amount" placeholder="Enter amount...">
+                <input type="submit" value="Add transaction">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

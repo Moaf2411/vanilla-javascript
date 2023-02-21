@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    position: relative;
+    overflow-x: hidden;
+    transition: all 1s;
+}
+
+.hambur{
+    position: absolute;
+    left:10px;
+    top:-10px;
+    z-index: 1;
+    margin:0;
+    padding:20px 10px 30px 10px;
+    font-size: 18px;
+    color:white;
+    background-color: purple;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hambur:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+    transform: translateY(10px);
+}
+
+
+
+.container{
+    position: relative;
+    margin:0;
+    padding:0;
+    display:flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+
+.menu{
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 100;
+    width: 350px;
+    height: 100vh;
+    background-color: rgb(3, 3, 55);
+    color:white;
+    font-size: 20px;
+    transition: all 1s;
+    transform:translateX(-350px);
+}
+
+.menu>p{
+    position: absolute;
+    top:0;
+    right:10px;
+    cursor: pointer;
+}
+
+.menu.hidden{
+    transform:translateX(-350px);
+}
+
+.menu.anim{
+    transform:translateX(350px);
+}
+
+
+body.anim{
+    transform:translateX(350px);
+}
+
+.menulist{
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:100px 0 0 ;
+    list-style-type: none;
+    padding:0;
+}
+
+.menulist li:hover{
+    cursor: pointer;
+}
+
+.pic{
+    width:100px;
+    height:100px;
+    margin-bottom: 30px;
+}
+
+.pic>img{
+    border-radius: 50%;
+    width:100%;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    padding-bottom: 70px;
+}
+
+.top{
+    width:100%;
+    margin-bottom: 30px;
+    background-color: rgb(3, 3, 55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 20px;
+    color:white;
+}
+
+.top h1{
+    margin:20px 0;
+}
+
+.signup{
+    background-color: purple;
+    padding: 15px 20px;
+    color:white;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+    border:none;
+}
+
+
+.signup:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(128, 0, 128, 0.445);
+}
+
+.bottom{
+    width:60%;
+}
+
+.bottom .header{
+    font-weight: bolder;
+}
+
+.hidden{
+    left: -350px;
+}
+
+
+.signupform{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    visibility: none;
+}
+
+.signupform{
+    background-color: white;
+    margin:0;
+    width:300px;
+    padding:10px 20px 20px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.signupform input{
+    margin-bottom:20px;
+    padding:5px 10px;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid black;
+    font-size: 12px;
+}
+
+.signupform input[type="submit"]{
+    width:100px;
+    margin: auto;
+    background-color: rgb(185, 26, 185);
+    color:white;
+    padding:10px;
+    border:none;
+}
+
+
+
+.signupform label{
+    font-size: 15px;
+    margin:0px 0 5px 2px;
+}
+
+
+
+.modal>h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:300px;
+    margin:0;
+    background-color: rgb(185, 26, 185);
+    padding:15px 20px;
+    color:white;
+    text-align: center;
+    font-weight: lighter;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.387);
+}
+
+
+
+
+canvas{
+    border: 1px solid black;
+}
